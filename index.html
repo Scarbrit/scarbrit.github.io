@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazonía Vital</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Estilo/estilo.css" />
+    <link rel="icon" type="image/png" href="/Imagen/logoPagina.png">
+
+  </head>
+  <body>
+    <!-- ========== Start Navbar ========== -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container">
+          <a class="navbar-brand fs-4" href="index.html">
+            <img
+              src="/Imagen/logoPagina.png"
+              alt="Logo"
+              width="60"
+              height="40"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- SiderBar -->
+          <div
+            class="sidebar offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fw-bold text-light"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item ms-3">
+                  <a
+                  class="nav-link fw-bold text-light ms-3"
+                  aria-current="page"
+                  href="/Vista/tienda-articulos.html"
+                  >
+                    Tienda
+                  </a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a
+                  class="nav-link fw-bold text-light ms-3"
+                  aria-current="page"
+                  href="/Vista/envios.html"
+                  >
+                    Envios
+                  </a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a
+                  class="nav-link fw-bold text-light ms-3"
+                  aria-current="page"
+                  href="/Vista/sobre-mi.html"
+                  >
+                    Acerca de mí
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                  class="nav-link fw-bold text-light ms-3"
+                  aria-current="page"
+                  href="/Vista/ayuda-y-soporte.html"
+                  >
+                    Ayuda y Soporte
+                  </a>
+                </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- ========== End Navbar ========== -->
+    
+    <!-- ========== Start Slider ========== -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Imagen/slider-1.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/Imagen/slider-2.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- ========== End Slider ========== -->
+    
+    <!-- ========== Start Productos ========== -->
+<section id="productos" class="py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col text-center">
+          <h2 class="fw-bold">Nuestros Productos</h2>
+          <p class="text-muted">Explora nuestra gama de productos de alta calidad</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="/Imagen/platano 2.jpg"
+              class="card-img-top"
+              height="240px"
+              alt="Producto 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Plátano</h5>
+              <p class="card-text">Fruta utilizada en diferentes preparaciones tradicionales ecuatorianas como chifles, cazuela, empandas, etc.</p>
+              <p class="card-text"><span class="fw-bold text-black">Precio: </span>$5</p>
+              <div class="col text-center">
+                <a href="#" class="btn btn-success">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="/Imagen/chonta.jpg"
+              class="card-img-top"
+              alt="Producto 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chonta</h5>
+              <p class="card-text">Fruta autóctona de la Amazonía consumidas en simplemente cocidas o utilizada para preparar la chicha de chonta.</p>
+              <p class="card-text"><span class="fw-bold text-black">Precio: </span>$1 x 20 unidades</p>
+              <div class="col text-center">
+                <a href="#" class="btn btn-success">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="/Imagen/papaya.jpg"
+              class="card-img-top"
+              alt="Producto 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Papaya</h5>
+              <p class="card-text">Fruta consumida en diversas preparaciones como ensaladas de frutas, jugos, entre otros.</p>
+              <p class="card-text"><span class="fw-bold text-black">Precio: </span>$0.50 x 1 unidad</p>
+              <div class="col text-center">
+                <a href="#" class="btn btn-success">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Enlace para ver todos los productos -->
+      <div class="row mt-4">
+        <div class="col text-center">
+          <a href="/Vista/tienda-articulos.html" class="btn btn-outline-primary">Ver todos los productos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== End Productos ========== -->  
+
+<!-- ========== Start about ========== -->
+<section id="aboutus">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col text-center">
+        <h2 class="fw-bold">Sobre mí</h2>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="/Imagen/dueña.jpg" class="img-fluid rounded" width="120px" alt="Foto de perfil">
+        </div>
+        <div class="col-md-8">
+          <p><span class="fw-bold">Dueña del local:</span> Loida Grefa <br>
+            <span class="fw-bold">Número de celular:</span> 0986670499 <br>
+            <span class="fw-bold">Dirección:</span> Barrio “Las Hierbitas”
+            </p>
+          <p style="text-align: justify;">El negocio surgió a partir de su espíritu emprendedor, empezó vendiendo los productos cosechados en su chakra para poder solventar económicamente su hogar. Se unió a un grupo de mujeres comerciantes que al igual que ella venden productos amazónicos, ella vendía en una cancha ubicada en la ciudad del Tena sin tener un lugar adecuado para llevar a cabo sus ventas. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ========== End about ========== -->
+
+<!-- ========== Start Video ========== -->
+<section id="productos" class="py-5">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col text-center">
+        <h2 class="fw-bold">Video</h2>
+      </div>
+    </div>
+    <div class="row">
+      <video src="/Video/VideoPagina.mp4" controls></video>
+    </div>
+  </div>
+</section>
+<!-- ========== End Video ========== -->
+
+
+  <article class="container">
+    <div class="row mb-4">
+      <div class="col text-center">
+        <h2 class="fw-bold">Contactos</h2>
+      </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <div class="topic">Dirección</div>
+                    <div class="text-one">Av. del Chofer y Pullurco</div>
+                    <div class="text-two">Tena - Ecuador</div>
+                </div>
+                <div class="phone details">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="topic">Teléfono</div>
+                    <div class="text-one">+593 98 66 70 499</div>
+                </div>
+                <div class="email details">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="topic">Correo electrónico</div>
+                    <div class="text-one">amazoniavital@gmail.com</div>
+                </div>
+            </div>
+            <div class="right-side">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.211062392011!2d-77.810126!3d-0.9996620000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwNTknNTguOCJTIDc3wrA0OCczNi41Ilc!5e0!3m2!1ses-419!2sec!4v1718925513025!5m2!1ses-419!2sec" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</article>
+
+ <!-- Pie de página -->
+ <footer class="footer text-white text-center py-3 mt-5">
+  <div class="container">
+      <p>&copy; 2024 Amazonía Vital. Todos los derechos reservados.</p>
+      <a href="https://www.facebook.com/share/LCujJZfVQQS9Z8y5/?mibextid=qi2Omg" target="_blank" class="d-inline-block mt-2">
+          <i class="fab fa-facebook fa-2x"></i>
+      </a>
+  </div>
+</footer>
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"
+></script>
+  </body>
+</html>
